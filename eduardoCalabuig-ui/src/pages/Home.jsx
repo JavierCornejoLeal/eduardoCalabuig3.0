@@ -1,6 +1,6 @@
-// src/pages/Home.jsx
 import React from "react";
 import { Button, Carousel } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 import "../assets/styles/home.css";
 import Footer from "../components/Footer";
@@ -11,7 +11,6 @@ import Mapa from "../components/Map";
 import SEO from "../components/SEO";
 
 import Eduardo from "../assets/images/home/edu.webp";
-import CV from "../assets/docs/CV.pdf";
 
 import Cocina from "../assets/images/projects/cocina.webp";
 import OfiEdu from "../assets/images/projects/oficinaEdu.webp";
@@ -25,15 +24,9 @@ import Noticia2 from "../assets/images/noticias/noticia2.webp";
 import Noticia3 from "../assets/images/noticias/noticia3.webp";
 
 const Home = () => {
-  // Función que fuerza la descarga
-  const handleDownloadCV = () => {
-    const link = document.createElement("a");
-    link.href = CV;
-    link.setAttribute("download", "CV.pdf");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
+  const navigate = useNavigate();
+
   return (
     <>
       <SEO
@@ -50,7 +43,7 @@ const Home = () => {
 
       {/* MAIN HOME PAGE CONTENT */}
       <main>
-        <section className="py-5 shadow-inner-section" id="aboutMe">
+        <section className="py-5 shadow-lg">
           <div className="container">
             <div className="row py-5">
               <div className="col-sm-12 col-lg-6">
@@ -77,7 +70,11 @@ const Home = () => {
                   solo transforma espacios, sino también la forma en que los
                   vivimos. Déjame ayudarte a dar vida a tu espacio.
                 </p>
-                <Button className="botonMarron" onClick={handleDownloadCV}>
+
+                <Button
+                  className="botonMarron"
+                  onClick={() => navigate("/sobremi")}
+                >
                   Descubre más
                 </Button>
               </div>
@@ -86,7 +83,7 @@ const Home = () => {
         </section>
 
         {/* Sección Proyectos */}
-        <section className="py-5 shadow-inner-section">
+        <section className="py-5 shadow-lg">
           <div className="container">
             <div className="row py-5">
               <div className="col-12 d-flex align-items-center justify-content-center">
@@ -105,7 +102,7 @@ const Home = () => {
           </div>
         </section>
 
-<section className="py-5 shadow-inner-section">
+<section className="py-5 shadow-lg">
   <div className="container">
     <div className="row py-5">
       <div className="col-12 d-flex align-items-center justify-content-center">
@@ -160,7 +157,7 @@ const Home = () => {
 </section>
 
 
-        <section className="py-5 shadow-inner-section">
+        <section className="py-5 shadow-lg">
           <div className="container">
             <div className="row py-5">
               <div className="col-12">

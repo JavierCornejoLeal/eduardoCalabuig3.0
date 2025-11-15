@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import CookieConsent from "./components/CookieConsent";
 
 import Home from "./pages/Home";
+import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
 import Proyectos from "./pages/Proyectos";
 import ExteriorIbizenco from "./pages/Projects/ExteriorIbizenco";
@@ -53,6 +54,21 @@ function AnimatedRoutes() {
               </motion.div>
             }
           />
+
+          <Route
+            path="/sobremi"
+            element={
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 50 }}
+                transition={pageTransition}
+              >
+                <SobreMi />
+              </motion.div>
+            }
+          />
+
           <Route
             path="/contacto"
             element={

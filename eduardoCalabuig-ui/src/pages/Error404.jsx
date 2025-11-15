@@ -82,7 +82,7 @@ const Error404 = () => {
             </div>
           </div>
 
-          <img src={imagenError} alt="Error 404" className="Error 404 interiorismo" />
+          <img src={imagenError} alt="Error 404" className="imagenError" />
         </section>
         <div className="containerSeccion"></div>
       </main>

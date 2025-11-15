@@ -54,7 +54,7 @@ const Footer = () => {
             <nav className="d-flex flex-column gap-2">
               <HashLink
                 smooth
-                to="/#aboutMe"
+                to="/sobremi"
                 className="linkFooter text-dark pb-3 text-decoration-none"
                 style={{ width: "fit-content" }}
               >

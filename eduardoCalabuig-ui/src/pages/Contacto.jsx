@@ -12,7 +12,7 @@ import OfiEdu from "../assets/images/contacto/oficinaEdu.webp";
 
 const Contacto = () => {
   const form = useRef();
-  const [showModal, setShowModal] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
   // Calcula la fecha actual en formato "29 de mayo de 2025"
   const fechaActual = new Date().toLocaleDateString("es-ES", {
@@ -22,26 +22,21 @@ const Contacto = () => {
   });
 
   useEffect(() => {
-    // Inicializa EmailJS con tu User ID
+    // Inicializa EmailJS con tu Public Key
     emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID);
   }, []);
 
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    if (!form.current) {
-      console.error("El formulario no está referenciado correctamente.");
-      return;
-    }
+    if (!form.current) return;
 
-    // Extrae valores del formulario
     const { nombre, apellidos, email, telefono, mensaje } = form.current;
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateContactId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const templateReplyId = import.meta.env.VITE_EMAILJS_TEMPLATE_REPLY_ID;
     const userId = import.meta.env.VITE_EMAILJS_USER_ID;
 
-    // Prepara parámetros comunes
     const templateParams = {
       nombre: nombre.value,
       apellidos: apellidos.value,
@@ -54,11 +49,18 @@ const Contacto = () => {
     try {
       await emailjs.send(serviceId, templateContactId, templateParams, userId);
       await emailjs.send(serviceId, templateReplyId, templateParams, userId);
-      setShowModal(true);
+
       form.current.reset();
+
+      setShowMessage(true);
+
+      // Oculta el mensaje automáticamente después de 3 segundos
+      setTimeout(() => setShowMessage(false), 3000);
+
     } catch (error) {
       console.error("EmailJS Error:", error);
-      setShowModal(true);
+      setShowMessage(true);
+      setTimeout(() => setShowMessage(false), 3000);
     }
   };
 
@@ -77,7 +79,7 @@ const Contacto = () => {
 
       <main>
         {/* Sección de datos y superposición */}
-        <section className="py-5 shadow-inner-section">
+        <section className="py-5 shadow-lg">
           <div className="container">
             <div className="row py-5">
               <div className="col-md-6 col-lg-4 d-flex flex-column align-items-center">
@@ -134,7 +136,7 @@ const Contacto = () => {
         </section>
 
         {/* FORMULARIO */}
-        <section className="py-5 shadow-inner-section">
+        <section className="py-5 shadow-lg">
           <div className="container">
             <h3 className="fw-semibold py-5">
               Te ayudo a encontrar tu espacio ideal
@@ -241,39 +243,11 @@ const Contacto = () => {
 
       <Footer />
 
-      {/* Modal Bootstrap personalizado */}
-      {showModal && (
-        <>
-          <div className="modal fade show d-block" tabIndex="-1" role="dialog" aria-modal="true">
-            <div className="modal-dialog modal-dialog-centered" role="document">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title">Mensaje enviado</h5>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    aria-label="Cerrar"
-                    onClick={() => setShowModal(false)}
-                  ></button>
-                </div>
-                <div className="modal-body">
-                  <p>¡Tu mensaje ha sido enviado correctamente!</p>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="botonMarron px-3 text-white"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Cerrar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Backdrop */}
-          <div className="modal-backdrop fade show"></div>
-        </>
+      {/* MENSAJE FLOTANTE */}
+      {showMessage && (
+        <div className="mensaje-flotante">
+          ¡Tu mensaje ha sido enviado correctamente!
+        </div>
       )}
     </>
   );

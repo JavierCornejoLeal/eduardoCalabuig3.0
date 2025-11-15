@@ -43,7 +43,7 @@ const NavBar = ({ alwaysLight = false }) => {
   const isLight = alwaysLight || scrolled || expanded || showCartPanel;
 
   const links = [
-    { text: "SOBRE MÍ", to: "/#aboutMe", isHash: true },
+    { text: "SOBRE MÍ", to: "/sobremi", isHash: true },
     { text: "PROYECTOS", to: "/proyectos" },
     { text: "NOTICIAS", to: "/noticias" },
     { text: "CONTACTO", to: "/contacto" },
