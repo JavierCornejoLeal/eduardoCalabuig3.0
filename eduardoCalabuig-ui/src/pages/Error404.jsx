@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 
 import "../assets/styles/error404.css";
@@ -16,9 +14,8 @@ const Error404 = () => {
         title="Diseño de Interiorismo | Error"
         description="Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades."
       />
-      <NavBar alwaysLight />
 
-      <main className="shadow-inner-section">
+      <main>
         <section
           className="py-5"
           style={{
@@ -86,7 +83,6 @@ const Error404 = () => {
         </section>
         <div className="containerSeccion"></div>
       </main>
-      <Footer />
     </>
   );
 };

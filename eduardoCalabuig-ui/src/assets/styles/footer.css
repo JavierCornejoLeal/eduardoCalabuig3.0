@@ -1,9 +1,11 @@
 .fondoFooter {
   background-color: #f1f0ec !important;
+  z-index: 0;
 }
 
-.linkFooter {
-    z-index: 1000;
+.container-fluid {
+  z-index: 2;
+  position: relative;
 }
 
 .linkFooter:hover {
@@ -30,6 +32,7 @@
   margin: 0;
   padding: 0;
   z-index: 1;
+  pointer-events: none;
 }
 
 .custom-border-bottom {
@@ -50,6 +53,7 @@
     margin: 0;
     padding: 0;
     z-index: 1;
+    pointer-events: none;
   }
 }
 
@@ -64,5 +68,6 @@
     margin: 0;
     padding: 0;
     z-index: 1;
+    pointer-events: none;
   }
 }

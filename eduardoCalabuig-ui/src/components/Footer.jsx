@@ -28,14 +28,14 @@ const Footer = () => {
                     title="LinkedIn"
                   />
                 </a>
-                <a href="https://instagram.com" className="social-icon">
+                <a href="https://instagram.com/eduardo_calabuig/" className="social-icon">
                   <PiInstagramLogoThin
                     size={30}
                     color="#51443D"
                     title="Instagram"
                   />
                 </a>
-                <a href="https://facebook.com" className="social-icon">
+                <a href="https://facebook.com/edu.calabuig.3" className="social-icon">
                   <BiLogoFacebookSquare
                     size={30}
                     color="#51443D"
@@ -49,9 +49,9 @@ const Footer = () => {
           <div className="col-3 col-lg-1 mb-4"></div>
 
           {/* Sección Eduardo */}
-          <div className="col-4 col-lg-2 pb-4">
+          <div className="col-sm-12 col-lg-2 pb-4 text-center text-lg-start">
             <h5 className="fw-100 pb-4">Eduardo</h5>
-            <nav className="d-flex flex-column gap-2">
+            <nav className="d-flex flex-column gap-2 align-items-center align-items-lg-start">
               <HashLink
                 smooth
                 to="/sobremi"
@@ -73,27 +73,6 @@ const Footer = () => {
                 style={{ width: "fit-content" }}
               >
                 Noticias
-              </a>
-            </nav>
-          </div>
-
-          {/* Sección Productos */}
-          <div className="col-5 col-lg-2 pb-4">
-            <h5 className="fw-100 pb-4">Productos</h5>
-            <nav className="d-flex flex-column gap-2">
-              <a
-                href="/productos"
-                className="linkFooter text-dark pb-3 text-decoration-none"
-                style={{ width: "fit-content" }}
-              >
-                Muebles
-              </a>
-              <a
-                href="/productos"
-                className="linkFooter text-dark pb-3 text-decoration-none"
-                style={{ width: "fit-content" }}
-              >
-                Esculturas
               </a>
             </nav>
           </div>

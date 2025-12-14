@@ -231,7 +231,7 @@ const Contacto = () => {
                   . <span className="">*</span>
                 </label>
               </div>
-              <div className="col-12 text-end">
+              <div className="col-12 text-start pb-5">
                 <button type="submit" className="btn enviaCorreo">
                   Enviar
                 </button>
