@@ -75,7 +75,7 @@ const NavBar = ({ alwaysLight = false }) => {
             {expanded ? <PiX size={30} /> : <HiBars3BottomRight size={30} />}
           </Navbar.Toggle>
 
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className="py-3">
             <Nav
               className="ms-auto align-items-center gap-5"
               style={{ color: isLight ? "black" : "white" }}

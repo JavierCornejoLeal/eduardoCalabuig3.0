@@ -1,7 +1,11 @@
-
+@media (max-width: 992px) {
+  .textoContainer {
+    font-size: 4em !important;
+  }
+}
 
 @media (max-width: 576px) {
-.textoContainer {
+  .textoContainer {
     font-size: 2.4em !important;
-}
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 
 import "../assets/styles/footer.css";
-import { PiLinkedinLogoThin, PiInstagramLogoThin } from "react-icons/pi";
+import { PiThreadsLogo, PiInstagramLogoLight } from "react-icons/pi";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 
 import logoFooter from "../assets/images/logo/logoFooter.webp";
@@ -22,17 +22,13 @@ const Footer = () => {
 
               <div className="d-flex gap-3 pt-3">
                 <a href="https://es.linkedin.com/" className="social-icon">
-                  <PiLinkedinLogoThin
-                    size={30}
-                    color="#51443D"
-                    title="LinkedIn"
-                  />
+                  <PiThreadsLogo size={30} color="#51443D" title="Threads" />
                 </a>
                 <a
                   href="https://instagram.com/eduardo_calabuig/"
                   className="social-icon"
                 >
-                  <PiInstagramLogoThin
+                  <PiInstagramLogoLight
                     size={30}
                     color="#51443D"
                     title="Instagram"
