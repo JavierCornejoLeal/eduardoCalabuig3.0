@@ -21,7 +21,10 @@ const Footer = () => {
               />
 
               <div className="d-flex gap-3 pt-3">
-                <a href="https://es.linkedin.com/" className="social-icon">
+                <a
+                  href="https://www.threads.com/@eduardo_calabuig?igshid=NTc4MTIwNjQ2YQ=="
+                  className="social-icon"
+                >
                   <PiThreadsLogo size={30} color="#51443D" title="Threads" />
                 </a>
                 <a
