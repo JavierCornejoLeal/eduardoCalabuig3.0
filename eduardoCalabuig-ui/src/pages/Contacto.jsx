@@ -56,7 +56,6 @@ const Contacto = () => {
 
       // Oculta el mensaje automáticamente después de 3 segundos
       setTimeout(() => setShowMessage(false), 3000);
-
     } catch (error) {
       console.error("EmailJS Error:", error);
       setShowMessage(true);
@@ -124,10 +123,11 @@ const Contacto = () => {
                     textShadow: "0 0 10px rgba(0,0,0,0.7)",
                     fontWeight: "bolder",
                     textAlign: "center",
-                    padding: "0 20px",
+                    padding: "0 10px",
+                    maxWidth: "90%",
                   }}
                 >
-                  <p>¿Tienes un proyecto?</p>
+                  <p className="pb-3">¿Tienes un proyecto en mente?</p>
                   <p>Contacta y lo hacemos único.</p>
                 </div>
               </div>

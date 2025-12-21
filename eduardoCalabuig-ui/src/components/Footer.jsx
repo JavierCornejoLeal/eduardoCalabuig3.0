@@ -28,14 +28,20 @@ const Footer = () => {
                     title="LinkedIn"
                   />
                 </a>
-                <a href="https://instagram.com/eduardo_calabuig/" className="social-icon">
+                <a
+                  href="https://instagram.com/eduardo_calabuig/"
+                  className="social-icon"
+                >
                   <PiInstagramLogoThin
                     size={30}
                     color="#51443D"
                     title="Instagram"
                   />
                 </a>
-                <a href="https://facebook.com/edu.calabuig.3" className="social-icon">
+                <a
+                  href="https://facebook.com/edu.calabuig.3"
+                  className="social-icon"
+                >
                   <BiLogoFacebookSquare
                     size={30}
                     color="#51443D"
@@ -50,7 +56,7 @@ const Footer = () => {
 
           {/* Sección Eduardo */}
           <div className="col-sm-12 col-lg-2 pb-4 text-center text-lg-start">
-            <h5 className="fw-100 pb-4">Eduardo</h5>
+            <h2 className="tituloFooter fw-100 pb-4">Eduardo</h2>
             <nav className="d-flex flex-column gap-2 align-items-center align-items-lg-start">
               <HashLink
                 smooth
@@ -78,8 +84,8 @@ const Footer = () => {
           </div>
 
           {/* Contacto */}
-          <div className="col-sm-12 col-lg-3 pb-4 text-center text-lg-start">
-            <h5 className="fw-100 pb-4">Contacto</h5>
+          <div className="col-sm-12 col-lg-4 pb-4 text-center text-lg-start">
+            <h2 className="tituloFooter fw-100 pb-4">Contacto</h2>
             <address className="d-flex flex-column align-items-center align-items-lg-start gap-2">
               <a
                 href="https://www.google.es/maps/place/Esplanada+Cervantes,+23,+03700+Denia,+Alicante/@38.8418145,0.1098823,17z/data=!3m1!4b1!4m6!3m5!1s0x129e1ae00438bef9:0xd6092d794b368e1e!8m2!3d38.8418104!4d0.1124572!16s%2Fg%2F11ldd0pl5j?hl=es&entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D"

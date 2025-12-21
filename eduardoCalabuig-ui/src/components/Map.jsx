@@ -25,7 +25,7 @@ function Mapa() {
       const { Loader } = await import("@googlemaps/js-api-loader");
 
       const loader = new Loader({
-        apiKey: "AIzaSyCPN_ICzYJyIsW_7ZNX7P2Z1TcsodRSD0s", // tu key intacta
+        apiKey: "AIzaSyCPN_ICzYJyIsW_7ZNX7P2Z1TcsodRSD0s",
         version: "weekly",
         libraries: ["marker"],
       });

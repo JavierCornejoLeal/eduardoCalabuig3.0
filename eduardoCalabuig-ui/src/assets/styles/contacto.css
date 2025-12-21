@@ -18,7 +18,6 @@
   overflow: hidden;
 }
 
-
 #formulario-contacto .form-check-input {
   accent-color: #51443d;
   border-radius: 0;
@@ -59,6 +58,7 @@
 
 .textoImagen {
   font-size: 3rem;
+  width: 100%;
 }
 
 .mensaje-flotante {
@@ -69,29 +69,36 @@
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   z-index: 9999;
   animation: fadeInOut 3s forwards;
 }
 
 @keyframes fadeInOut {
-  0% { opacity: 0; transform: translateY(-20px); }
-  10%, 90% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(-20px); }
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
 }
-
 
 @media (max-width: 992px) {
   .textoImagen {
-    font-size: 2rem !important;
-    width: 100%;
+    font-size: 2.3rem !important;
   }
 }
 
 @media (max-width: 576px) {
   .textoImagen {
-    font-size: 2rem !important;
-    width: 100%;
+    font-size: 1.65rem !important;
   }
 
   .form-check-label {

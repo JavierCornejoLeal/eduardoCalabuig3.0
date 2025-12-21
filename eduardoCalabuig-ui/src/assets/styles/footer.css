@@ -41,6 +41,9 @@
   margin: 0 auto;
 }
 
+.tituloFooter {
+  font-size: 1.5rem !important;
+}
 
 @media (max-width: 992px) {
   .imagenSobresale {

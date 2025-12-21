@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../assets/images/header/exxterior-reducida.webp"; 
+import backgroundImage from "../assets/images/header/exxterior-reducida.webp";
 import "../assets/styles/header.css";
 
 const Header = ({ children }) => {
@@ -8,7 +8,7 @@ const Header = ({ children }) => {
       style={{
         position: "relative",
         width: "100%",
-        height: "56em",
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

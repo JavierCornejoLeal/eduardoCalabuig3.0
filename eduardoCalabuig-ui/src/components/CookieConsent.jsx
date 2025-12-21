@@ -31,19 +31,28 @@ const CookieConsent = () => {
         tabIndex="-1"
         role="dialog"
         aria-modal="true"
+        aria-labelledby="cookieConsentTitle"
       >
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title">Política de Cookies</h5>
+              <h5 className="modal-title" id="cookieConsentTitle">
+                Política de Cookies
+              </h5>
             </div>
             <div className="modal-body">
               <p>
-                En este sitio utilizamos cookies propias y de terceros para 
-                mejorar tu experiencia de navegación y mostrarte contenidos 
+                En este sitio utilizamos cookies propias y de terceros para
+                mejorar tu experiencia de navegación y mostrarte contenidos
                 personalizados. Al continuar navegando, aceptas nuestra{" "}
-                <a className="text-dark" href="/politicaCookies">Política de Cookies</a> y nuestra{" "}
-                <a className="text-dark" href="/politicaPrivacidad">Política de Privacidad</a>.
+                <a className="text-dark" href="/politicaCookies">
+                  Política de Cookies
+                </a>{" "}
+                y nuestra{" "}
+                <a className="text-dark" href="/politicaPrivacidad">
+                  Política de Privacidad
+                </a>
+                .
               </p>
             </div>
             <div className="modal-footer">
