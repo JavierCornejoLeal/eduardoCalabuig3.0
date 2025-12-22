@@ -38,7 +38,7 @@ const Header = ({ children }) => {
         className="textoContainer"
         style={{
           zIndex: 2,
-          fontSize: "6rem",
+          fontSize: "5rem",
           fontWeight: "bolder",
           textAlign: "center",
           padding: "0 20px",
