@@ -16,7 +16,7 @@ const ExteriorIbizenco = () => {
   return (
     <>
       <SEO
-        title="Diseño de Interiorismo | Exterior Ibizenco"
+        title="Diseño de Interiores | Exterior Ibizenco"
         description="Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades."
         endpoint="proyectos/exteriorIbizenco"
       />
@@ -89,18 +89,34 @@ const ExteriorIbizenco = () => {
 
             <div className="row py-md-4">
               <div className="col-12 col-md-6 pb-3 pb-md-0">
-                <img className="w-100 imagenProyecto" src={Exterior} alt="Exterior estilo ibizenco con decoraciones y naturaleza" />
+                <img
+                  className="w-100 imagenProyecto"
+                  src={Exterior}
+                  alt="Exterior estilo ibizenco con decoraciones y naturaleza"
+                />
               </div>
               <div className="col-12 col-md-6 pb-3 pb-md-0">
-                <img className="w-100 imagenProyecto" src={Exterior2} alt="Exterior estilo ibizenco con suelo de barro" />
+                <img
+                  className="w-100 imagenProyecto"
+                  src={Exterior2}
+                  alt="Exterior estilo ibizenco con suelo de barro"
+                />
               </div>
             </div>
             <div className="row pb-3 pb-md-5">
               <div className="col-12 col-md-6 pb-3 pb-md-0">
-                <img className="w-100 imagenProyecto" src={Exterior3} alt="Exterior estilo ibizenco con amaca estilo ibicenca" />
+                <img
+                  className="w-100 imagenProyecto"
+                  src={Exterior3}
+                  alt="Exterior estilo ibizenco con amaca estilo ibicenca"
+                />
               </div>
               <div className="col-12 col-md-6">
-                <img className="w-100 imagenProyecto" src={Exterior4} alt="Exterior minimalista funcional" />
+                <img
+                  className="w-100 imagenProyecto"
+                  src={Exterior4}
+                  alt="Exterior minimalista funcional"
+                />
               </div>
             </div>
           </div>

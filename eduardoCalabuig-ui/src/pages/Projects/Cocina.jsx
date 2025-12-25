@@ -16,7 +16,7 @@ const Cocina = () => {
   return (
     <>
       <SEO
-        title="Diseño de Interiorismo | Cocina Contemporanea | Cocina Moderna"
+        title="Diseño de Interiores | Cocina Contemporanea | Cocina Moderna"
         description="Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades."
         endpoint="proyectos/cocina"
       />

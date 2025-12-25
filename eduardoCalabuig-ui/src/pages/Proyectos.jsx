@@ -22,7 +22,7 @@ const Proyectos = () => {
   return (
     <>
       <SEO
-        title="Diseño de Interiorismo | Nuestros Proyectos más recientes con un estilo único"
+        title="Diseño de Interiores | Nuestros Proyectos más recientes con un estilo único"
         description="Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades."
         endpoint="proyectos"
       />

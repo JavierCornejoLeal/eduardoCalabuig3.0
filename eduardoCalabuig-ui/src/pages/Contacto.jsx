@@ -66,7 +66,7 @@ const Contacto = () => {
   return (
     <>
       <SEO
-        title="Diseño de Interiorismo | Contacto"
+        title="Diseño de Interiores | Contacto"
         description="Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades."
         endpoint="contacto"
       />

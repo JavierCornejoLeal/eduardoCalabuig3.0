@@ -11,7 +11,7 @@ const Error404 = () => {
   return (
     <>
       <SEO
-        title="Diseño de Interiorismo | Error"
+        title="Diseño de Interiores | Error"
         description="Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades."
       />
 

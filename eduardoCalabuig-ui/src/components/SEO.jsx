@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 function SEO({
   title,
   description = "Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades.",
-  keywords = "Eduardo Calabuig, Diseño de Interiorismo, diseñador,  decoración minimalista, estilo ibizenco, espacios únicos, Dénia",
+  keywords = "Eduardo Calabuig, Diseño de Interiores, diseñador,  decoración minimalista, estilo ibizenco, espacios únicos, Dénia, Denia",
   endpoint = "",
   image = "/favIcon.webp",
   noIndex = false,

@@ -56,7 +56,7 @@ const Noticias = () => {
   return (
     <>
       <SEO
-        title="Diseño de Interiorismo | Últimas Noticias y novedades"
+        title="Diseño de Interiores | Últimas Noticias y novedades"
         description="Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades."
         endpoint="noticias"
       />

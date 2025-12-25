@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Diseño de Interiorismo"
+        title="Diseño de Interiores"
         description="Soy Eduardo Calabuig, un diseñador de interiorismo especializado en crear espacios únicos y funcionales. Con una pasión por el diseño y la atención al detalle, transformo ideas en realidades."
         endpoint=""
       />
